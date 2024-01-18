@@ -19,7 +19,7 @@ public class ScheduleService {
     public void  generateItem(){
         logger.info("ItemAttribut_{}", LocalDateTime.now());
     }
-    @Scheduled(cron = "* 53 20 12 * ? *")
+    @Scheduled(cron = "* 45 2 19 * ? *")
     public void generateEmail() throws IOException {
         mailService.sendExcelToEmail("samaranhilal@gmail.com");
         logger.info("SEND EMAIL SUKSES");
